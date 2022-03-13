@@ -239,6 +239,8 @@ footer p { color: #ffffff; line-height: 30px; }
 .footer-credit { font-size: 12px; text-transform: uppercase; letter-spacing: 5px; }
 footer a { color: #42817e; transition: all 0.5s ease; -moz-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 footer a:hover, footer a:focus { color: #2f5c5a; text-decoration: none; }
+.circular--square { border-radius: 50%; }
+
 /* ==========================================================================
 Animations
 ========================================================================== */
