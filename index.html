@@ -11,6 +11,7 @@
     <script src="js/main.js"></script>
     
     
+    
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -188,8 +189,20 @@ No longer do you have to create content to participate in earning on these platf
       
       
       
-      <!-
-      <section class="design" id="design">
+      <script>
+        let answers=document.querySelectorAll(".accordion");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+    </script>
+     <!-- <section class="design" id="design">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -362,10 +375,7 @@ Sign up here using our Referral Code:https://m.mexc.com/auth/signup?inviteCode=1
 </p>
   
             </div>
-        </div>
-      </div>
-  
-    <script>
+          <script>
         let answers=document.querySelectorAll(".accordion");
         answers.forEach((event)=>{
             event.addEventListener('click',()=>{
@@ -378,6 +388,10 @@ Sign up here using our Referral Code:https://m.mexc.com/auth/signup?inviteCode=1
             })
         })
     </script>
+        </div>
+      </div>
+  
+    
               </div>
               
 
