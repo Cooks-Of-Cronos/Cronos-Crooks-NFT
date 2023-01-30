@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>#survey-form {
+      background-color: #181818;
+      height: max-content;
+      width: auto;
+      display: block;
+      max-width: 65%;
+      border-radius: 0.5rem;
+      margin: 0 auto 10rem auto;
+      padding: 2rem 5rem 6rem 4rem;
+      box-shadow: 0px 0px 10px #F27777;
+    }
+    @media (max-width: 900px) {
+      #survey-form {
+        max-width: 80%;
+      }
+    }
+    @media (max-width: 700px) {
+      #survey-form {
+        max-width: 90%;
+      }
+    }
+    @media (max-width: 480px) {
+      #survey-form {
+        max-width: 100%;
+      }
+    }
+    
+    .form-group {
+      display: block;
+      margin: 5rem auto 5rem auto;
+    }
+    label {
+      font-size: 1.8rem;
+      text-align: start;
+      align-items: center;
+      margin: 0 0 1rem 0;
+      display: block;
+    }
+    .dark-box {
+      font-size: 1.8rem;
+      font-family: "Poppins", sans-serif;
+      height: 5rem;
+      width: 100%;
+      color: #fafafa;
+      background-color: #121212;
+      border-color: rgb(40, 47, 56);
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border-radius: 0.5rem;
+      padding: 0.5rem 2rem;
+    }
+    .dark-box:focus {
+      border-color: rgb(69, 143, 228);
+      border-style: solid;
+      box-shadow: 0 0 5px rgb(8, 86, 175);
+      outline: 0;
+    }
+    input[type="radio"],
+    input[type="checkbox"] {
+      display: inline-block;
+      margin: 1rem 1rem 0 0;
+      min-height: 1.8rem;
+      min-width: 1.8rem;
+    }
+    .checks-radios label {
+      display: inline-block;
+      height: 2rem;
+      width: 45%;
+    }
+    @media (max-width: 700px) {
+      .checks-radios label {
+        display: block;
+        width: auto;
+      }
+    }
+    #comments {
+      height: 20rem;
+      padding: 1rem 0 2rem 1rem;
+    }
+    #submit {
+      font-family: "Poppins", cursive;
+      font-size: 2rem;
+      height: 5rem;
+      color: #fafafa;
+      width: 100%;
+      outline: 0;
+      border-radius: 0.5rem;
+      border: none;
+      background: linear-gradient(#F20505, #F20505);
+    }
+    #submit:hover {
+      background: linear-gradient(#F27777, #F27777);
+      border: 1px solid rgb(69, 143, 228);
+      box-shadow: 0px 0px 0.8rem #F27777;
+    }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crooks Of Cronos NFT</title>
+<link rel="stylesheet" href="https://dvzvtsvyecfyp.cloudfront.net/static/css/main.02cdf5a5db4d.css"><script src="https://dvzvtsvyecfyp.cloudfront.net/static/js/main.3b52243c0f20.js" defer></script>
+	
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+	
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/styles.css?v=1.6" rel="stylesheet">
+    <link href="css/queries.css?v=1.6" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@xiee/utils/css/faq.min.css" rel="stylesheet"></link>
+<script src="https://cdn.jsdelivr.net/npm/@xiee/utils/js/faq.min.js" defer></script>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+
+	<link rel="stylesheet" href="https://dvzvtsvyecfyp.cloudfront.net/static/css/main.374165d9fa28.css"><script src="https://dvzvtsvyecfyp.cloudfront.net/static/js/main.4c7f84ac44dc.js" defer></script>
+	
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+      <div class="topnav">
+        <a target="_blank" class="active" href="#home"></a>
+        <a target="_blank" href="index.html">Home</a>
+        <a target="_blank" href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+        <a target="_blank" href="https://crobadge.shop/">Mint Cops NFT</a>
+        <a target="_blank" href="">Mint CroCell NFT</a>
+        <a target="_blank" href="https://crooksofcronos.xyz/game.html">Play Our Game! (Desktop Only)</a>
+        <a target="_blank" href="https://cronoskitchen.xyz">NFT Marketplace</a>
+      </div>
+
+
+
+<!-- ADD COINMARKETCAP WIDGET-->
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="3635,16519,21370,16430,14519,20800,20280" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
+
+      <section class="hero" id="hero">
+        <div class="container">
+          
+          <div class="row">
+            <div class="column"><img src="img/CountyCrooks100x100.gif" img class="circular--square" alt="">
+              <h1 class="animated bounceInDown"><b>Come & PLAY <br><span>The "Crooks Getaway Game"</span></b> </h1><br>
+              
+            
+
+            </div>
+            <div class="column">
+              <iframe frameborder="0" src="https://itch.io/embed-upload/6220751?color=333333" allowfullscreen="" width="1000" height="1020"><a href="https://genogrand.itch.io/crooksgetaway">Play Crooks Getaway on itch.io</a></iframe>
+            </div>
+          </div>
+
+
+          <div class="directions">
+            <h1><b>HOW TO PLAY:</b></h1>
+          <p><b>To win,</b> <i></i>Get to the End of the Level.</i></p>
+        <br>
+            <h3 class="featuresList"><strong>Controls</strong></h3>
+          
+            <ul class="featuresList">
+              <li><b>Spacebar:</b> "Jump"</li>
+              <li><b>A, D (Arrow Keys):</b> "Move Forwards", "Move Backwards"</li>
+            </ul>
+                 <br>
+              
+            </p>
+          <br>
+          <p>When <strong>"Cro Gold Tokens"</strong> appear, Collectt them for a bonus!<br />
+                The More Tokens you Get, The More Rewards! :)
+            </p>
+          <p>Be careful though, because if you get caught by a Munster then <strong>YOU LOSE!</strong></p>
+          <label for="progress">Game Development Progress:</label>
+
+<progress id="file" max="100" value="10"> 10% </progress>
+
+        </div>
+         <section>
+          <label for="progress">Features Coming Soon:</label>
+          <ul class="featuresList">
+            <li>Cronos Play Integration</li>
+            <li>Wallet Sign In</li>
+            <li>Play-To-Earn($cGOLD)</li>
+            <li>In-Game NFT Minting</li>
+            <li>In-Game NFT Transfers</li>
+            <li>In-Game NFT Marketplace</li>
+            <li>Main Menu</li>
+            <li>More Levels</li>
+            <li>Custom Character Sprites</li>
+            <li>Character Selection w/ NFT Integration</li>
+          </ul>
+
+          <br></br>
+         </section>
+
+
+
+
+
+
+
+
+
+          
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              
+ <a target="_blank" href="https://dgoatcrypto.gitbook.io/crooks-of-cronos-whitepaper/" class="try-btn">Read the Whitepaper</a>
+              <a target="_blank" href="https://discord.gg/RgyfqGnaGE" class="try-btn">Join Community!</a>
+              <a target="_blank" href="https://crobadge.shop/" class="try-btn">Purchase NFT!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="download-now" id="getstarted">
+        <center><h1><b>Leave Feedback</b></h1></center>
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              class="dark-box"
+              id="name"
+              name="participant-name"
+              required
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input
+              type="email"
+              class="dark-box"
+              id="email"
+              name="emailID"
+              required
+              placeholder="youremail@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+            <input
+              type="number"
+              class="dark-box"
+              id="number"
+              min="7"
+              max="99"
+              placeholder="Your Age"
+            />
+          </div>
+          <div class="form-group">
+            <label for="dropdown">Which option best describes you :</label>
+            <select id="dropdown" class="dark-box" name="dropdown">
+              <option value="default" disabled selected>Select an option</option>
+              <option value="NewBie">NewBie - Don't play a lot of games</option>
+              <option value="Mature">
+                Mature Gamer - Have played several games
+              </option>
+              <option value="Regular">Regular Gamer - Play games daily</option>
+              <option value="Hard Core">
+                Hard Core Gamer - Live and breath games
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label> Have you played any of the games made by Cro County NFT ? </label>
+            <div class="checks-radios">
+              <label
+                ><input
+                  type="radio"
+                  name="user check"
+                  value="yes"
+                  checked
+                />Yes</label
+              >
+              <label><input type="radio" name="user check" value="no" />No</label>
+              <label
+                ><input type="radio" name="user check" value="seen them" />No, but
+                have seen gameplay online.</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label> How was your experience playing Crooks Runner ?</label>
+            <div class="checks-radios">
+              <label
+                ><input
+                  type="radio"
+                  name="user experience"
+                  value="amazing"
+                  checked
+                />Amazing</label
+              >
+              <label
+                ><input type="radio" name="user experience" value="okay" />It was
+                okay</label
+              >
+              <label
+                ><input type="radio" name="user experience" value="bad" />It was
+                bad</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="user experience"
+                  value="haven't played"
+                />Haven't played any</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label> Which types of games do you like the most ?</label>
+            <div class="checks-radios">
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Action"
+                  checked
+                />Action Games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Action-Adventure"
+                />Action-Adventure Games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Adventure"
+                />Adventure Games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Role-playing"
+                />Role-playing Games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Simulation"
+                />Simulation games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Strategy"
+                />Strategy games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Sports"
+                />Sports games</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-categories[]"
+                  value="Puzzle"
+                />Puzzle games</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label> What do you like about Cro County NFT P2E ?</label>
+            <div class="checks-radios">
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="everything"
+                  checked
+                />Everything</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="graphics"
+                />Graphics</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="gameplay"
+                />Gameplay</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="ad-free"
+                />Ad-Free Experience</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="support"
+                />Support Team</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="liked-features[]"
+                  value="community"
+                />Community</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label> What bothers you about Cro County NFT P2E ?</label>
+            <div class="checks-radios">
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="nothing"
+                  checked
+                />Nothing</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="audio"
+                />Audio Quality</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="graphics"
+                />Graphics Quality</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="gameplay"
+                />Gameplay</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="controls"
+                />Game controls</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="disliked-features[]"
+                  value="support"
+                />Support Quality</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <label> Any more feedbacks or suggestions ?</label>
+            <textarea
+              id="comments"
+              class="dark-box"
+              name="comments"
+              rows="12"
+              cols="20"
+              placeholder="Enter your comments or suggestions here..."
+            ></textarea>
+          </div>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      
+      
+    
+        <div class="partners-section">
+          <h1><b>Our Partners</b></h1>
+          <div class="partners-container d-flex flex-wrap">
+            <div class="partner">
+              <img src="https://pbs.twimg.com/profile_images/1417359604623679488/CGzQIEVX_400x400.png" alt="Cronos.com">
+              <p class="partner-name">Cronos.com</p>
+            </div>
+            <div class="partner">
+              <img src="https://assets.codepen.io/4014849/online-logo-maker-for-chef-schools-1299b.png" alt="Cromatoes.xyz">
+              <p class="partner-name">Cromatoes.xyz</p>
+            </div>
+            <div class="partner">
+              <img src="https://crodex.app/img/footer-logo.png" alt="Crodex.app">
+              <p class="partner-name">Crodex.app</p>
+            </div>
+            <div class="partner">
+              <img src="data:image/png;base64,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" width="100" height="100"alt="Crosea.io">
+              <p class="partner-name">Crodex.app</p>
+            </div>
+
+  
+          </div>
+        </div>
+              
+              <p><b>Disclaimer:<b> We do not endorse and condone crime in any way shape, form or fashion. All Content on this website is for Entertainment Purposes Only.</p>
+            </div>
+            <div class="col-md-2 col-md-offset-3">
+              <ul class="footer-nav">
+                <h1> <b>Resources</b></h1>
+                <li><a target="_blank" href="https://cronos.org/docs/getting-started/">Getting Started on Cronos</a></li>
+                <li><a target="_blank" href="https://cronos.org/docs/getting-started/metamask.html">Setting Up Your Wallet For Cronos</a></li>
+                <li><a target="_blank" href="https://cronoscan.com/">Cronos Chain Explorer - Track Transactions</a></li>
+                
+                <!--<li><a target="_blank" href="#">Follow Us On Twitter!</a></li>-->
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg">NFT Teaser Video</a></li>
+                <li><a target="_blank" href="InfoGraph_Crooks.pdf">Learn About the Project</a></li>
+                
+                <li><a target="_blank" href="https://dgoatcrypto.gitbook.io/crooks-of-cronos-whitepaper/">Roadmap & Whitepaper</a></li>
+                <li><a target="_blank" href="Metaverse.html">Metaverse 3D Teaser</a></li>
+                <li><a target="_blank" href="crocells.html">Staking - "CROCELL 3D NFTS"</a></li>
+                 <li><a target="_blank" href="https://discord.gg/RgyfqGnaGE">Get in Touch!</a></li>
+                <li><a target="_blank" href="https://discord.gg/RgyfqGnaGE">Get Whitelisted!</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-md-offset-3">
+            <ul class="footer-nav">
+              <h1> <b>Recent News</b></h1>
+              <li><a target="_blank" href="https://cronos.org/docs/getting-started/">Rug Relations: BACC, Lil Anubus, Cronos Connections.</a></li>
+              <li><a target="_blank" href="https://cronos.org/docs/getting-started/metamask.html">2023 Roadmap - "Cro County"</a></li>
+              <li><a target="_blank" href="https://cronoscan.com/">How to use CronosScan Effectively</a></li>
+              
+              
+            </ul>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a target="_blank" href="https://discord.gg/rDVGWqdFKf" class="badge-btn">Join Discord</a>
+              <p class="footer-credit">All Rights Reserved <a target="_blank" href="http://crooksofcronos.xyz">Crooks of Cronos</a></p><br>
+              
+               <a target="_blank" href="https://www.instagram.com/crooksofcronosnft/" class="fa fa-instagram"></a>
+<a target="_blank" href="https://twitter.com/crookscronos" class="fa fa-twitter"></a>
+              <br><br>
+              
+              <iframe src="https://discord.com/widget?id=951572849167065108&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/jquery.fancybox.pack.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js?v=1.7"></script>
+      <script src="js/jquery.flexslider.js"></script>
+      <script src="js/jquery.smooth-scroll.js"></script>
+      <script src="js/modernizr.js"></script>
+      <script src="js/waypoints.min.js"></script>
+    </body>
+  </html>
+

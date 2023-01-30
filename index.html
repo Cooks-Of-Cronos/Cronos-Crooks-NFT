@@ -1,0 +1,278 @@
+
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<style>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  text-shadow: 1px 1px #fff, -1px -1px #fff, -1px 1px #fff, 1px -1px #fff;
+}
+.wrapper h1, .wrapper p {
+  z-index: 1;
+  mix-blend-mode: screen;
+}
+.wrapper h1 {
+  font-weight: 600;
+  margin: 0;
+}
+
+@-webkit-keyframes bounce-sm {
+  0% {
+    transform: translatey(-5%);
+  }
+  100% {
+    transform: translatey(5%);
+  }
+}
+
+@keyframes bounce-sm {
+  0% {
+    transform: translatey(-5%);
+  }
+  100% {
+    transform: translatey(5%);
+  }
+}
+@-webkit-keyframes bounce-md {
+  0% {
+    transform: translatey(-10%);
+  }
+  100% {
+    transform: translatey(10%);
+  }
+}
+@keyframes bounce-md {
+  0% {
+    transform: translatey(-10%);
+  }
+  100% {
+    transform: translatey(10%);
+  }
+}
+@-webkit-keyframes bounce-lg {
+  0% {
+    transform: translatey(-20%);
+  }
+  100% {
+    transform: translatey(20%);
+  }
+}
+@keyframes bounce-lg {
+  0% {
+    transform: translatey(-20%);
+  }
+  100% {
+    transform: translatey(20%);
+  }
+}
+figure {
+  position: absolute;
+}
+figure img {
+  animation: bounce-md 2s ease-in-out both infinite alternate-reverse;
+  filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.4));
+}
+figure:nth-of-type(1) {
+  top: -20%;
+  right: 15%;
+}
+figure:nth-of-type(1) img {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: bounce-sm;
+          animation-name: bounce-sm;
+  max-height: 80vh;
+}
+figure:nth-of-type(2) {
+  right: 10%;
+  top: 40%;
+}
+figure:nth-of-type(2) img {
+  -webkit-animation-duration: 2.25s;
+          animation-duration: 2.25s;
+  max-height: 60vh;
+}
+figure:nth-of-type(3) {
+  left: 25%;
+  top: 60%;
+}
+figure:nth-of-type(3) img {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  max-height: 60vh;
+}
+figure:nth-of-type(4) {
+  left: 10%;
+  top: 5%;
+}
+figure:nth-of-type(4) img {
+  max-height: 40vh;
+}
+
+@media (max-width: 960px) {
+  img {
+    height: 40%;
+  }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  
+.ground{
+  min-height: 100vh;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.footer_container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+       <!--NAVIGATION MENU
+        for navigating all web pages
+    
+    -->
+    <div class="topnav">
+        <a target="_blank" class="active" href="#home"></a>
+        <a target="_blank" href="index.html">Home</a>
+        <a target="_blank" href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+        <a target="_blank" href="https://crobadge.shop/">Mint Cops NFT</a>
+        <a target="_blank" href="#">F.A.Q</a>
+        <a target="_blank" href="features.html">Utility</a>
+        <a target="_blank" href="twosided.html">Choose Your Side</a>
+        <a target="_blank" href="http://twitter.com/@crookscronos">Twitter</a>
+        
+
+        <a target="_blank" href="games.html">Play Our Game! (Desktop Only)</a>
+        </div>
+<div class="wrapper">
+    <h1>CRO County NFT </h1>
+    <p>Ecosystem & Metaverse <br>Home of the Official <a target="_blank" href="https://crooksofcronos.xyz/" target="_blank">Crooks Of Cronos NFTs</a></p>
+
+    <figure class="handle-mousemove"><img src="https://i.imgur.com/w4cOdip.jpg" height="100" alt="Cronos Wanted Poster"/></figure>
+
+    <figure class="handle-mousemove" data-variant-x="60" data-variant-y="20"><a target="_blank" href="https://cronos.org" ><img src="https://i.imgur.com/DVVNorR.png" alt="Cronos Logo"/></a></figure>
+
+    <figure class="handle-mousemove" data-variant-x="60" data-variant-y="20"><a target="_blank" href="https://cronos.org" ><img src="https://i.imgur.com/LsGsY3O.png" alt="C.A.A.C"/></a></figure>
+
+    <figure class="handle-mousemove" data-variant-x="60" data-variant-y="20"><a target="_blank" href="https://cronos.org" ><img src="https://i.imgur.com/uH4AbNp.png" alt="Cronos Consortium Ecosystem Support"/></a></figure>
+<!--ADD NEW
+    
+    -->
+    <figure class="handle-mousemove" data-variant-x="60" data-variant-y="20"><a target="_blank" href="http://crooksofcronos.shop" ><img src="https://i.imgur.com/GmEJyCo.png" alt="Crooks Of Cronos"/></a></figure>
+
+    <figure class="handle-mousemove" data-variant-x="5" data-variant-y="5"><a target="_blank" href="" ><img src="https://i.imgur.com/vqGCe5v.png" height="100" alt="Cro County Logo"/></a></figure>
+    <figure class="handle-mousemove" data-variant-x="20" data-variant-y="30"><a target="_blank" href="https://dgoatcrypto.gitbook.io/crooks-of-cronos-whitepaper/" ><img src="https://i.imgur.com/7PvNo9d.png" alt="Youtube NFT"/></a></figure>
+  </div>
+
+<script>
+
+const HANDLE_MOUSEMOVE_CLASS = 'handle-mousemove';
+const elements = [...document.getElementsByClassName(HANDLE_MOUSEMOVE_CLASS)];
+
+const handleMousemove = (event) => {
+  const { innerHeight, innerWidth } = window;
+  const midHeight = innerHeight / 2;
+  const midWidth = innerWidth / 2;
+  
+  const { x, y } = event;
+  const percentX = ((x - midWidth) * 100) / midWidth;
+  const percentY = ((y - midHeight) * 100) / midHeight;
+  
+  elements.forEach((el, index) => {
+    const { variantX = 10, variantY = 10} = el.dataset;
+    const tx = percentX * (variantX / 100);
+    const ty = percentY * (variantY / 100);
+    el.style.transform = `translate(${tx}%, ${ty}%)`;
+  });
+};
+
+window.onmousemove = (event) => {
+  clearTimeout(handleMousemove.timeout);
+  handleMousemove.timeout = setTimeout(() => handleMousemove(event), 10);
+};
+</script>
+
+</body>
+
+<footer>
+  <div class="footer_container">
+    <div class="logo"> <p>CRO County NFT </p></div>
+      <div class="social_media">
+        <!--<a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
+        <a target="_blank" href="http://Twitter.com/@CrooksCronos"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.instagram.com/crooksofcronosnft/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
+        <!--<a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>-->
+      </div>
+      <p>CRO County NFT © 2022 All Rights Reserved.</p>
+    </div>
+</footer>

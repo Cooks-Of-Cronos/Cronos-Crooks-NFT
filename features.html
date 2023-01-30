@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .heading__title {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: radial-gradient(#F20505, #F20505);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#F27777, #F27777);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#F27777, #F27777);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#595959, #595959);
+  }
+  
+  .card-5 {
+    background: radial-gradient(#0D0D0D, #0D0D0D);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+
+  
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  footer{
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.footer_container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+#footer-main {
+  background-color: #f8f8f8;
+  border: solid 1px #333;
+  padding: 60px;
+}
+
+.footer-ap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 180px;
+}
+
+@media (max-width: 1024px) {
+  .footer-ap {
+    padding-left: 20px;
+  }
+}
+
+
+/* --------------------------
+---------- styles ----------- 
+---------------------------*/
+
+section .footer-1 {
+  background-color: #F20505;
+}
+
+section .footer-2 {
+  background-color: #1e11d6;
+}
+
+section .footer-3 {
+  background-color: #1e11d6;
+}
+section .footer-4 {
+  background-color: #F27777;
+}
+section {
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  padding:20px;
+}
+
+
+  </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+     <!--NAVIGATION MENU
+        for navigating all web pages
+    
+    -->
+    <div class="topnav">
+      <a class="active" href="#home"></a>
+      <a href="index.html">Home</a>
+      <a href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+      <a href="https://crobadge.shop/">Mint Cops NFT</a>
+      <a href="">F.A.Q</a>
+      <a href="features.html">Utility</a>
+      <a href="twosided.html">Choose Your Side</a>
+      <a href="http://twitter.com/@crookscronos">Twitter</a>
+      
+
+      <a href="games.html">Play Our Game! (Desktop Only)</a>
+    </div>
+<!-- 
+
+GRADIENT BANNER DESIGN BY SIMON LURWER ON DRIBBBLE:
+https://dribbble.com/shots/14101951-Banners
+
+-->
+<div class="main-container">
+    <div class="heading">
+      <h1 class="heading__title">NFT Utility & Features</h1>
+      <div id="my_logo"> <img src="https://i.imgur.com/GmEJyCo.png" height="100px" id="my_logo_image"> </div>
+
+      <p class="heading__credits"><a class="heading__link" target="_blank" href="https://dribbble.com/sl">Put Your NFTs to Work!</a></p>
+    </div>
+    <div class="cards">
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">NFT Staking - Earn Rewards, $cGOLD</h2>
+        <p class="card__apply">
+          <a class="card__link" href="http://crooksofcronos.shop">Start Staking<i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-2">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Watch-To-Earn - Earn Crypto Rewards just for Watching our Videos.</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Start Earning <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-3">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">NFT Trading - Buy/Sell Your NFTs on our Marketplace</h2>
+        <p class="card__apply">
+          <a class="card__link" href="http://cronoskitchen.xyz">Start Trading <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-4">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Play-To-Earn - Use Your NFTs in our Play-To-Earn Gaming Ecosystem. Increase your rewards, Unlock NFT Holder Only Benefits.</h2>
+        <p class="card__apply">
+          <a class="card__link" href="game.html">Start Gaming! <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-5">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">Cronos Contributors - Check out our achievements on the Cronos Network and all that we've done to HELP the ECOSYSTEM THRIVE.</h2>
+        <p class="card__apply">
+          <a class="card__link" href="highlights.html">Learn More <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+      <div class="card card-1">
+        <div class="card__icon"><i class="fas fa-bolt"></i></div>
+        <p class="card__exit"><i class="fas fa-times"></i></p>
+        <h2 class="card__title">REDEEM MERCH - Use Your $cGOLD to Redeem Merch from our Private Token Gated Website. Participate in other features as well such as DAO and governance</h2>
+        <p class="card__apply">
+          <a class="card__link" href="#">Start Redeeming <i class="fas fa-arrow-right"></i></a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+<h1>Features - Expanded</h1>
+<footer id="footer-main">
+  <section class="footer-ap">
+   
+        <section class="footer-1">
+          <h4>Cro Crook Utility</h4>
+            <p>🔑NFT Marketplace Royalties</p>
+            <p>🔑Secondary Sale Royalties</p>
+            <p>🔑Youtube Royalties</p>
+            <p>🔑NFT Airdrops</p>
+            <p>🔑NFT Merch </p>
+          <p>🔑Metaverse ACCESS</p>
+          <p>🔑Staking </p>
+          <p>🔑DAO </p>
+          <p>🔑Secret Alpha Chats  </p>
+          
+
+
+
+        </section>
+
+       <section class="footer-2">
+          <h4>Cro Cop Utility</h4>
+            <p>⭐Gratitude Opportunity</p>
+            <p>⭐Staking</p>
+            <p>⭐Metaverse</p>
+            <p>⭐Play-To-Earn</p>
+         <p>⭐FREE ACCESS To Directory Services</p>
+         <p>⭐FREE E-Books</p>
+        </section>
+
+       <section class="footer-3">
+         <h4>Crobadge Utility</h4>
+           <p>⭐Cro Cop Claim 1:1</p>
+           <p>⭐NFT Upgrades</p>
+           <p>⭐Staking</p>
+           <p>⭐NFT Airdrops</p>
+           <p>⭐5 FREE Directory Listings Per Month</p>
+           <p>⭐1 FREE E-Book Per Month</p>
+       </section>
+
+       <section class="footer-4">
+        <h4>Special NFT Utility</h4>
+           <p>✨ACCESS To ALL VIP Chats</p>
+           <p>✨Monthly Airdrops BONUS +1 NFTs</p>
+           
+        </section>
+    
+     <section class="footer-4">
+        <h4>Special NFT List</h4>
+           <p>👉Holiday NFTs</p>
+           <p>👉Crook Wanted Posters</p>
+           <p>👉Crooks IA Dossier Files</p>
+           <p><etc class=""></etc></p>
+           
+        </section>
+    
+     <section class="footer-4">
+        <h4>NFT & Defi Services</h4>
+           <p>✅Website Advertising</p>
+           <p>✅Directory Listing</p>
+           <p>✅NFT Marketing Service</p>
+           <p>✅NFT Marketplace Listing</p>
+           <p>✅Paid Crypto Courses (Virtual)</p>
+
+        </section>
+
+        <section class="footer-4">
+          <h4>NFT & Defi Products</h4>
+             <p>🛒Merch</p>
+             <p>🛒Educational E-Books</p>
+             <p>🛒Comic Books</p>
+             
+          </section>
+   
+  </section>
+  
+
+</footer>
+    
+<footer>
+  <div class="footer_container">
+    <div class="logo"> <p>CRO County NFT </p></div>
+      <div class="social_media">
+        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+        <a href="http://Twitter.com/@CrooksCronos"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/crooksofcronosnft/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
+        <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+      </div>
+      <p>CRO County NFT © 2022 All Rights Reserved.</p>
+    </div>
+</footer>

@@ -1,0 +1,497 @@
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    
+    body{
+        margin: 0 auto;
+      
+    }
+    
+    
+    .wrapper{
+      display: flex;
+      justify-content: space-between;
+      min-height: 100vh;
+      color: white;
+      text-align: center;
+    }
+    .left{
+      background-color: red;
+      width: 50%;
+    
+    
+    }
+    .right{
+      background-color: blue;
+      width: 50%;
+    
+    }
+    
+    .container{
+      position: relative;
+    }
+    
+    .container .card{
+      position: relative;
+      width: 320px;
+      height: 450px;
+      background: #232323;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .container .card:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff0303;
+      clip-path: circle(150px at 80% 20%);
+      transition: 0.5s ease-in-out;
+    }
+    
+    .container .card:hover:before{
+      clip-path: circle(300px at 80% -20%);
+    }
+    
+    .container .card:after{
+      content: 'Crook';
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      font-size: 12em;
+      font-weight: 800;
+      font-style: italic;
+      color: rgba(255,255,25,0.05)
+    }
+    
+    .container .card .imgBx{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10000;
+      width: 100%;
+      height: 220px;
+      transition: 0.5s;
+    }
+    
+    .container .card:hover .imgBx{
+      top: 0%;
+      transform: translateY(0%);
+        
+    }
+    
+    .container .card .imgBx img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-25deg);
+      width: 270px;
+    }
+    
+    .container .card .contentBx{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+    }
+    
+    .container .card:hover .contentBx{
+      height: 210px;
+    }
+    
+    .container .card .contentBx h2{
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #fff;
+      margin: 0;
+    }
+    
+    .container .card .contentBx .size, .container .card .contentBx .color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      transition: 0.5s;opacity: 0;
+      visibility: hidden;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    
+    .container .card:hover .contentBx .size{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.5s;
+    }
+    
+    .container .card:hover .contentBx .color{
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.6s;
+    }
+    
+    .container .card .contentBx .size h3, .container .card .contentBx .color h3{
+      color: #fff;
+      font-weight: 300;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-right: 10px;
+    }
+    
+    .container .card .contentBx .size span{
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      line-height: 26px;
+      font-size: 14px;
+      display: inline-block;
+      color: #111;
+      background: #fff;
+      margin: 0 5px;
+      transition: 0.5s;
+      color: #111;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .container .card .contentBx .size span:hover{
+      background: #9bdc28;
+    }
+    
+    .container .card .contentBx .color span{
+      width: 20px;
+      height: 20px;
+      background: #ff0;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    
+    .container .card .contentBx .color span:nth-child(2){
+      background: #9bdc28;
+    }
+    
+    .container .card .contentBx .color span:nth-child(3){
+      background: #03a9f4;
+    }
+    
+    .container .card .contentBx .color span:nth-child(4){
+      background: #e91e63;
+    }
+    
+    .container .card .contentBx a{
+      display: inline-block;
+      padding: 10px 20px;
+      background: #fff;
+      border-radius: 4px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #111;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 0.5s;
+      margin-top: 0;
+    }
+    
+    .container .card:hover .contentBx a{
+      opacity: 1;
+      transform: translateY(0px);
+      transition-delay: 0.75s;
+      
+    }
+    div#my_logo{ position: absolute; top: 43pt; left: 24pt; }
+    
+    div#my_logo2{ position: absolute; top: 70pt; right: 24pt; }
+    
+    progress-bar {
+      --fill-color: green;
+    }
+
+    
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+
+  footer{
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.footer_container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.section .footer-1 {
+  background-color: #bc27c4;
+}
+    
+    </style>
+
+</head>
+
+
+
+
+<body>
+     <!--NAVIGATION MENU
+        for navigating all web pages
+    
+    -->
+    <div class="topnav">
+        <a target="_blank" class="active" href="#home"></a>
+        <a target="_blank" href="index.html">Home</a>
+        <a target="_blank" href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+        <a target="_blank" href="https://crobadge.shop/">Mint Cops NFT</a>
+        <a target="_blank" href="">F.A.Q</a>
+        <a target="_blank" href="features.html">Utility</a>
+        <a target="_blank" href="twosided.html">Choose Your Side</a>
+        <a target="_blank" href="http://twitter.com/@crookscronos">Twitter</a>
+        
+
+        <a target="_blank" href="games.html">Play Our Game! (Desktop Only)</a>
+      </div>
+
+<div id="my_logo"> <img src="https://i.imgur.com/GmEJyCo.png" height="100px" id="my_logo_image"> </div>
+
+<div id="my_logo2"> <img src="https://i.imgur.com/vqGCe5v.png" height="100px" id="my_logo_image"> </div>
+<div class="wrapper">
+  <div class="left">
+    <h1>Mint a Cro Crook NFT</h1>
+<div class="container">
+  <div class="card">
+    <div class="imgBx">
+      <img src="https://i.imgur.com/LthjFIY.png">
+    </div>
+    <div class="contentBx">
+      <h2> Crook NFT</h2>
+      <div class="size">
+        <h3>Market :</h3>
+        <span>CK</span>
+        <span>CS</span>
+        <span>CG</span>
+        <span>EB</span>
+      </div>
+      <h2>Floor: 199 CRO</h2>
+      <!--<div class="color">
+        <h3>Color :</h3>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>-->
+      <a target="_blank" href="http://crooksofcronos.shop">Mint Now</a>
+    </div>
+  </div>
+</div>
+    <p>Our First NFT Character Drop, the "Cro Crook NFT" is based on our Youtube Logo and was created to give the Cronos Blockchain Community it's Bad Guy's with good guys to be released soon with the addition of the "Cro Cop NFTs".
+We like to use the term 'Cops N Crooks' of the Cronos Blockchain.
+There's a total of 1,111 Crook NFTs and 999 Crop NFTs to be released in October.</p>
+<br>
+<section class="footer-1">
+  <h4>Cro Crook Utility</h4>
+    <p>🔑NFT Marketplace Royalties</p>
+    <p>🔑Secondary Sale Royalties</p>
+    <p>🔑NFT Airdrops</p>
+    <p>🔑NFT Merch </p>
+  <p>🔑Metaverse ACCESS</p>
+  <p>🔑Staking </p>
+  <p>🔑DAO </p>
+  <p>🔑Secret Alpha Chats  </p>
+<h2>Mint Progress</h2>
+<progress-bar percent="100"></progress-bar>
+  </div>
+
+
+<div class="right">
+      <h1>Mint a CRO Cop NFT</h1>
+<div class="container">
+  <div class="card">
+    <div class="imgBx">
+      <img src="https://i.imgur.com/uGU5ng2.png">
+    </div>
+    <div class="contentBx">
+      <h2> COP NFT</h2>
+      <div class="size">
+        <h3>Market :</h3>
+        <span>CK</span>
+        <span>CS</span>
+        <span>CG</span>
+        <span>EB</span>
+      </div>
+      <h2>Floor: 199 CRO</h2>
+      <!--<div class="color">
+        <h3>Color :</h3>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>-->
+      <a target="_blank" href="http://crobadge.shop">Mint Now</a>
+    </div>
+
+    
+  </div>
+  
+</div>
+    <p>999 Cro Crops coming to Cronos to End the Reign of the Crooks of Cronos.
+Unique Traits and Rarities!
+Collect Donuts in our Play-To-Earn Game! :)
+Lock your Crooks via Staking and Accrue More by Owning a Cop NFT! :)
+</p>
+<br>
+<section class="footer-2">
+  <h4>Cro Cop Utility</h4>
+    <p>⭐Gratitude Opportunity</p>
+    <p>⭐Staking</p>
+    <p>⭐Metaverse</p>
+    <p>⭐Play-To-Earn</p>
+ <p>⭐FREE ACCESS To Directory Services</p>
+ <p>⭐FREE E-Books</p>
+</section>
+<h2>Mint Progress</h2>
+<progress-bar percent="0"></progress-bar>
+  </div>
+  <br>
+
+ 
+
+</div>
+
+<script>
+
+class ProgressBar extends HTMLElement {
+  static css = `
+        :host {
+            display: block;
+            width: 250px;
+            height: 40px;
+            background: #eeeeee;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .fill {
+            width: 0%;
+            height: 100%;
+            background: var(--fill-color, #222222);
+            transition: width 0.25s;
+        }
+    `;
+
+  static get observedAttributes() {
+    return ["percent"];
+  }
+
+  constructor() {
+    super();
+
+    this.attachShadow({ mode: "open" });
+
+    const style = document.createElement("style");
+    const fill = document.createElement("div");
+
+    style.innerHTML = ProgressBar.css;
+    fill.classList.add("fill");
+
+    this.shadowRoot.append(style, fill);
+  }
+
+  get percent() {
+    const value = this.getAttribute("percent");
+
+    if (isNaN(value)) {
+      return 0;
+    }
+
+    if (value < 0) {
+      return 0;
+    }
+
+    if (value > 100) {
+      return 100;
+    }
+
+    return Number(value);
+  }
+
+  set percent(value) {
+    this.setAttribute("percent", value);
+  }
+
+  attributeChangedCallback(name) {
+    if (name === "percent") {
+      this.shadowRoot.querySelector(".fill").style.width = `${this.percent}%`;
+    }
+  }
+}
+
+customElements.define("progress-bar", ProgressBar);
+
+</script>
+
+
+
+</body>
+
+<footer>
+  <div class="footer_container">
+    <div class="logo"> <p>CRO County NFT </p></div>
+      <div class="social_media">
+        <!--<a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
+        <a target="_blank" href="http://Twitter.com/@CrooksCronos"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.instagram.com/crooksofcronosnft/"><i class="fab fa-instagram"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
+        <!--<a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>-->
+      </div>
+      <p>CRO County NFT © 2022 All Rights Reserved.</p>
+    </div>
+</footer>
