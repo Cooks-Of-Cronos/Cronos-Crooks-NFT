@@ -1,0 +1,579 @@
+
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  
+  <style>
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+  :root{
+    --main-purple: #132295; 
+    --second-purple: #f60202; 
+    --third-purple: #fb0000; 
+    --fourth-purple: #E80F88; 
+    --main-white: #f0f0f0;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--main-white);
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: var(--main-purple);
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0;
+    list-style: none;
+    padding: 25px 0;
+    font-size: 17px;
+}
+
+.nav-link{
+    padding-right: 40px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+
+header{
+    background-color: var(--second-purple);
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    left: 0;
+}
+
+#header-img{
+    width: 50px;
+    margin-top: 8px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+}
+
+#hero{
+    margin-top: 150px;
+    text-align: center;
+}
+
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 300px;
+    padding: 5px 10px;
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--second-purple);
+    color: var(--main-white);
+}
+
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: var(--second-purple);
+    border-radius: 5px;
+    color: var(--main-white);
+}
+
+#form{
+    padding: 50px 0;
+}
+
+.img{
+    background-color: var(--main-white);
+}
+
+#features .icon {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+
+.grid {
+    display: flex;
+    padding: 10px;
+}
+
+#video{
+    text-align: center;
+}
+
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    width: 100%;
+    max-width: 560px;
+}
+
+#price{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: var(--second-purple) 1px solid;
+    border-radius: 3px;
+    margin: 15px;
+}
+#pricing{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 20px auto 50px auto;
+    align-items: center;
+}
+
+.level{
+    font-size: 20px;
+    background-color: var(--second-purple);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.price h2{
+    margin: 10px 0;
+}
+
+ol li{
+    list-style: none;
+}
+
+.btn{
+    margin: 15px 0;
+    background-color: var(--second-purple);
+    border: 0; 
+    height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+
+footer ul li a{
+    text-decoration: none;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+    background-color: var(--second-purple);
+}
+
+footer ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+footer ul li{
+    padding-right: 10px;
+    list-style: none;
+}
+
+span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-style: italic;
+}
+
+#nav-bar{
+    background-color: var(--second-purple);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fd0000c2;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+@media(max-width: 550px){
+    #header-img{
+        width: 0.1px;
+        height: 50px;
+    }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  left: 5;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+  
+  </style>
+  
+  
+  
+  
+  </head>
+  
+  <body>
+  
+         <!--NAVIGATION MENU
+          for navigating all web pages
+      
+      -->
+      <div class="topnav">
+        <a target="_blank" class="active" href="#home"></a>
+        <a target="_blank" href="index.html">Home</a>
+        <a target="_blank" href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+        <a target="_blank" href="https://crobadge.shop/">Mint Cops NFT</a>
+        <a target="_blank" href="crobocop.html">Mint CroboCop</a>
+        <a target="_blank" href="#">F.A.Q</a>
+        <a target="_blank" href="features.html">Utility</a>
+        <a target="_blank" href="twosided.html">Choose Your Side</a>
+        <a target="_blank" href="http://twitter.com/@crookscronos">Twitter</a>
+        <a target="_blank" href="marketplace-merch.html">Merch</a>
+        
+        
+
+        <a target="_blank" href="games.html">Play Our Game! (Desktop Only)</a>
+      </div>
+        <!-- ADD COINMARKETCAP WIDGET-->
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="3635,16519,21370,16430,14519,20800,20280" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+    
+    <section id="hero">
+        <h2>Cro County 2023 - Cops NFT Drop</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img\crobo\cbo1.png" alt="leave">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img\crobo\cbo2.png" alt="bar-chart">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img\crobo\cbo3.png" alt="magnifying-glass">
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          
+          
+<div id="ac-wrapper" style='display:none'>
+    <div id="popup">
+        <center>
+            <img src="img\crobo\cbo1.png" alt="leave" border="0">
+             <h2>Popup Content Here</h2>    
+            <input type="submit" name="submit" value="Hide" onClick="PopUp('hide')" />
+        </center>
+    </div>
+</div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" required name='email' class="email" id="email" placeholder="example@example.com">
+            <br>
+            <input type="submit" class="submit" id="submit" value="Get Early ACCESS!">
+        </form>
+    </section>
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon"><img src="https://i.ibb.co/8sn6vjc/leave.png" alt="leave" border="0"></div>
+                <div class="desc">
+                    <h2>Indivisibility</h2>
+                    <p>NFTs have historically been indivisible when it comes to their utility. For example, a plane ticket cannot be purchased and used partially — someone must buy it in full because only a single person can use the seat. </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><img src="https://i.ibb.co/gRbCj9P/fingerprint.png" alt="fingerprint" border="0"></div>
+                <div class="desc">
+                    <h2>Uniqueness</h2>
+                    <p>Our NFTs are also unique because no two NFTs are the same — they're not interchangeable. The metadata of each NFT is an unalterable record that gives it the certificate of authenticity. </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><img src="https://i.ibb.co/GtPqzG4/bar-chart.png" alt="bar-chart" border="0"></div>
+                <div class="desc">
+                    <h2>Interoperability</h2>
+                    <p>NFTs can be traded, purchased, or sold across various DLTs using a decentralized bridge or centralized custodial service. </p>
+                </div>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EJzB_Fa27ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+        </section>
+        <h2 id="price">Price</h2>
+        <section id="pricing">
+            <div id="cat" class="price">
+                <div class="level">Cro Crooks NFT</div>
+                <img src="img\crobo\ItsLithoNormal_709.jpeg" alt="bar-chart" border="0" style="max-width: 100%; max-height: 100%;">
+
+                
+                <h2>$19</h2>
+                <ol>
+                    <li>First Gen Drop</li>
+                    <li>Most Utility</li>
+                    <li>Royalty Rewards</li>
+                    <li>Watch-To-Earn</li>
+                </ol>
+                <button class="btn">Mint</button>
+            </div>
+            <div id="monkey" class="price">
+                <div class="level">CroBadge NFT</div>
+                <img src="img\crobo\crocopa.jpg" alt="bar-chart" border="0" style="max-width: 100%; max-height: 100%;">
+                <h2>$35</h2>
+                <ol>
+                    <li>3D NFT Airdropped</li>
+                    <li>Separate Utility</li>
+                    <li>Gamification</li>
+                    <li>Metaverse</li>
+                    <li>NFT Alpha</li>
+                </ol>
+                <button class="btn">Mint</button>
+            </div>
+            <div id="robots" class="price">
+                <img src="img\crobo\CroCell_GIF.gif" alt="bar-chart" border="0" style="max-width: 100%; max-height: 100%;">
+                <div class="level">CroCell (Airdrop)</div>
+                <h2>$0</h2>
+                <ol>
+                    <li>Airdropped to Crook Holders</li>
+                    <li>Staking Enabled</li>
+                    <li>Prison Metaverse</li>
+                <li>EXCLUSIVE ACCESS(dao)</li>
+                    <li>Rewards Multiplier</li>
+                </ol>
+                <button class="btn">Mint</button>
+            </div>
+            <div id="robots" class="price">
+                <img src="img\crobo\crobo_gif.gif" alt="bar-chart" border="0" style="max-width: 100%; max-height: 100%;">
+                <div class="level">CroBo Cops NFT</div>
+                <h2>$50</h2>
+                <ol>
+                    <li>3D NFT Character</li>
+                    <li>Bonus NFT Included(First 15 Mints)</li>
+                    <li>2023 Updated Utility</li>
+                <li>EXCLUSIVE ACCESS</li>
+                    <li>Watch-To-Earn Rewards Multiplier</li>
+                </ol>
+                <button class="btn">Mint</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span>Copyright 2022, NFT Seller
+            </span>
+        </footer>
+    </div>
+</body>
+</html>
+  
+  <script>
+  
+  
+function PopUp(hideOrshow) {
+    if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+    else document.getElementById('ac-wrapper').removeAttribute('style');
+}
+window.onload = function () {
+    setTimeout(function () {
+        PopUp('show');
+    }, 5000);
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+  </script>
+  
+  </body>
+  
+  <footer>
+    <div class="footer_container">
+      <div class="logo"> <p>CRO County NFT </p></div>
+        <div class="social_media">
+          <!--<a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>-->
+          <a target="_blank" href="http://Twitter.com/@CrooksCronos"><i class="fab fa-twitter"></i></a>
+          <a target="_blank" href="https://www.instagram.com/crooksofcronosnft/"><i class="fab fa-instagram"></i></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
+          <!--<a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>-->
+        </div>
+        <p>CRO County NFT © 2022 All Rights Reserved.</p>
+      </div>
+  </footer>

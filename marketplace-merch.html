@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  .main-container {
+    padding: 30px;
+  }
+  
+  /* HEADING */
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .heading__title {
+    font-weight: 600;
+  }
+  
+  .heading__credits {
+    margin: 10px 0px;
+    color: #888888;
+    font-size: 25px;
+    transition: all 0.5s;
+  }
+  
+  .heading__link {
+    text-decoration: none;
+  }
+  
+  .heading__credits .heading__link {
+    color: inherit;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+  }
+  
+  .card__link,
+  .card__exit,
+  .card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+  }
+  
+  .card__link:hover::after {
+    width: 100%;
+  }
+  
+  .card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  
+  .card__icon {
+    grid-row: 2/3;
+    font-size: 30px;
+  }
+  
+  .card__title {
+    grid-row: 3/4;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  .card__apply {
+    grid-row: 4/5;
+    align-self: center;
+  }
+  
+  /* CARD BACKGROUNDS */
+  
+  .card-1 {
+    background: radial-gradient(#F20505, #F20505);
+  }
+  
+  .card-2 {
+    background: radial-gradient(#F27777, #F27777);
+  }
+  
+  .card-3 {
+    background: radial-gradient(#F27777, #F27777);
+  }
+  
+  .card-4 {
+    background: radial-gradient(#595959, #595959);
+  }
+  
+  .card-5 {
+    background: radial-gradient(#0D0D0D, #0D0D0D);
+  }
+  
+  /* RESPONSIVE */
+  
+  @media (max-width: 1600px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+
+  .product-container{
+  display:flex;
+  flex-wrap:wrap;
+   width:100%;
+  justify-content:center
+} 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+    background-color: white; 
+  
+  padding-bottom:1%
+
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: orange;
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: darkorange;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ }
+.original-price {
+  text-decoration: line-through;
+  color: lightgray;
+  font-size: 0.875rem;
+}
+
+.discount-price {
+  color: orange;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+  
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fd0000c2;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  footer{
+  background: #ffffff;
+  padding: 20px 0;
+}
+
+.footer_container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+#footer-main {
+  background-color: #f8f8f8;
+  border: solid 1px #333;
+  padding: 60px;
+}
+
+.footer-ap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 180px;
+}
+
+@media (max-width: 1024px) {
+  .footer-ap {
+    padding-left: 20px;
+  }
+}
+
+
+/* --------------------------
+---------- styles ----------- 
+---------------------------*/
+
+section .footer-1 {
+  background-color: #F20505;
+}
+
+section .footer-2 {
+  background-color: #1e11d6;
+}
+
+section .footer-3 {
+  background-color: #1e11d6;
+}
+section .footer-4 {
+  background-color: #F27777;
+}
+section {
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  padding:20px;
+}
+
+
+  </style>
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+     <!--NAVIGATION MENU
+        for navigating all web pages
+    
+    -->
+    <div class="topnav">
+        <a target="_blank" class="active" href="#home"></a>
+        <a target="_blank" href="index.html">Home</a>
+        <a target="_blank" href="http://crooksofcronos.shop">Mint Crooks NFT</a>
+        <a target="_blank" href="https://crobadge.shop/">Mint Cops NFT</a>
+        <a target="_blank" href="#">F.A.Q</a>
+        <a target="_blank" href="features.html">Utility</a>
+        <a target="_blank" href="twosided.html">Choose Your Side</a>
+        <a target="_blank" href="http://twitter.com/@crookscronos">Twitter</a>
+        <a target="_blank" href="marketplace-merch.html">Merch</a>
+        <
+        
+
+        <a target="_blank" href="games.html">Play Our Game! (Desktop Only)</a>
+      </div>
+      <!-- ADD COINMARKETCAP WIDGET-->
+<script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="3635,16519,21370,16430,14519,20800,20280" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
+<!-- 
+
+GRADIENT BANNER DESIGN BY SIMON LURWER ON DRIBBBLE:
+https://dribbble.com/shots/14101951-Banners
+
+-->
+<div class="product-container">
+
+ 
+    <div class="product-card">
+      <img src="img\merch\dadhat.png" alt="Product Name" class="product-image">
+      <h3 class="product-name">Dad Hat - White</h3>
+      <p class="product-description">For the True degen dads.</p>
+      <div class="product-price">1000 $cGOLD</div>
+      <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+      
+      
+      
+      
+      
+      <div class="product-card">
+      <img src="img\merch\beanie.png" alt="Product Name" class="product-image">
+      <h3 class="product-name">Crooks Beanie</h3>
+      <p class="product-description">Winter's almost over, I've seen Beanie's in the summer. :)</p>
+      <div class="product-price">
+        <span class="original-price">$99.99</span>
+        <span class="discount-price">2000 $cGOLD</span>
+      </div>
+      <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+      
+      
+      
+      
+      
+      
+      <div class="product-card">
+      <img src="img\merch\navyshirt.png" alt="Product Name" class="product-image">
+      <h3 class="product-name">Navy Schemers Tee</h3>
+      <p class="product-description">From the Original Project Whitepaper </p>
+      <div class="product-price">500 $cGOLD</div>
+      <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+     
+      
+      
+      
+        
+      
+      <div class="product-card">
+      <img src="img\merch\hoodie.png" alt="Product Name" class="product-image">
+      <h3 class="product-name">Crooks Hoodie - Black</h3>
+      <p class="product-description">For the HODLRz</p>
+     <div class="product-price">
+        <span class="original-price">10,000 $cGOLD</span>
+        <span class="discount-price">8,000 $cGOLD</span>
+      </div>  <button class="add-to-cart-button">Add to Cart</button>
+    </div>
+     
+      
+      
+      
+    </div>
+  
+
+</footer>
+    
+<footer>
+  <div class="footer_container">
+    <div class="logo"> <p>CRO County NFT </p></div>
+      <div class="social_media">
+        <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+        <a href="http://Twitter.com/@CrooksCronos"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/crooksofcronosnft/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
+        <!--<a href="#"><i class="fab fa-linkedin-in"></i></a>-->
+      </div>
+      <p>CRO County NFT © 2022 All Rights Reserved.</p>
+    </div>
+</footer>
