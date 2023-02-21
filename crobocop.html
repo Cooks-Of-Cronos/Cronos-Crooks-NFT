@@ -5,7 +5,9 @@
   
   <style>
   
-  
+   /* Import the custom font */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
   :root{
     --main-purple: #132295; 
@@ -20,6 +22,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
     color: var(--main-white);
+}
+
+
+
+/* Apply the custom font to the h2 and p elements */
+h2, p {
+  font-family: 'Roboto', sans-serif;
 }
 
 html{
@@ -241,7 +250,7 @@ span{
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(73, 0, 0);
   }
   
   /* Add a color to the active/current link */
@@ -417,12 +426,13 @@ span{
 <body>
     
     <section id="hero">
-        <h2>Cro County 2023 - CroBoCops NFT Drop</h2>
-        <br>
-<p>Welcome to our latest 3D NFT drop for 2023! Get ready for a <b>unique Cop Character</b> <br>and <b>Lamborghini Style Cop Vehicle</b>, exclusively available to the <b>first 25 minters</b>. <br>This stunning 3D design is our first NFT drop of the year, with intricate details that are sure to impress.</p><br>
-<p>A portion of all sales will be used as liquidity for our rewards token, <b>$cGOLD</b>.<br> This means that owning a <b>one-of-a-kind NFT</b> also means contributing to the growth of our rewards program.</p>
+      <h1 style="font-size: 40px; font-family: 'Russo One', sans-serif;">Cro County 2023 - CroBoCops NFT Drop</h1>
 
-<p>Stay tuned for more information on how to participate in the airdrop.</p>
+      <br>
+      <p style="font-size: 24px; font-family: 'Russo One', sans-serif;">Welcome to our latest 3D NFT drop for 2023! Get ready for a <b>unique Cop Character</b> <br>and <b>Lamborghini Style Cop Vehicle</b>, exclusively available to the <b>first 25 minters</b>. <br>This stunning 3D design is our first NFT drop of the year, with intricate details that are sure to impress.</p><br>
+      <p style="font-size: 24px; font-family: 'Russo One', sans-serif;">A portion of all sales will be used as liquidity for our rewards token, <b>$cGOLD</b>.<br> This means that owning a <b>one-of-a-kind NFT</b> also means contributing to the growth of our rewards program.</p>
+      <p style="font-size: 24px; font-family: 'Comic Sans MS', cursive, sans-serif;">Stay tuned for more information on how to participate in the airdrop.</p>
+
         <div class="slideshow-container">
             <div class="mySlides fade">
               <img src="img\crobo\cbo1.png" alt="leave">
@@ -433,7 +443,19 @@ span{
             </div>
           
             <div class="mySlides fade">
+              <img src="img\crobo\crocopa.jpg" alt="magnifying-glass">
+            </div>
+
+            <div class="mySlides fade">
               <img src="img\crobo\cbo3.png" alt="magnifying-glass">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img\crobo\CroCopCarLambo.png" alt="magnifying-glass">
+            </div>
+
+            <div class="mySlides fade">
+              <img src="img\crobo\CroboCops.png" alt="magnifying-glass">
             </div>
           
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -482,9 +504,12 @@ span{
   
             <section id="how-it-works">
                 <iframe width="560" height="315" src="img\crobo\futuristic-police-car-and-cop-3d-model-4122-original.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
-                <p>Join the <b>first 25 minters</b> and become part of our <b>exclusive NFT community</b>. Don't miss your chance to get your hands on this unique 3D NFT featuring a <b>Cop Character</b> and <b>Lamborghini Style Cop Vehicle</b>.</p>
+                
+                <p style="font-size: 24px; font-family: 'Russo One', sans-serif;">Join the <b>first 25 minters</b> and become part of our <b>exclusive NFT community</b>. Don't miss your chance to get your hands on this unique 3D NFT featuring a <b>Cop Character</b> and <b>Lamborghini Style Cop Vehicle</b>.</p>
+
+                <iframe width="560" height="315" src="img\crobo\futuristic-police-car-and-cop-3d-model-4125-original.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
             </section>
-        <h2 id="price">Price</h2>
+        <h2 id="price">Pricing Details</h2>
         <section id="pricing">
            
             <div id="robots" class="price">
@@ -492,10 +517,10 @@ span{
                 <div class="level">NFT CroBoCop Combo</div>
                 <h2></h2>
                 <ol>
-                    <li>Airdropped to Crook Holders</li>
-                    <li>Staking Enabled</li>
-                    <li>Prison Metaverse</li>
-                <li>EXCLUSIVE ACCESS(dao)</li>
+                    <li>Airdropped to Crobadge Holders & Boss Dao Members</li>
+                    <li>3D Prison Metaverse Gamification</li>
+                    <li>Multiple File Types Included</li>
+                <li>EXCLUSIVE ACCESS(DAO)</li>
                     <li>Rewards Multiplier</li>
                 </ol>
                 <button class="btn">Enter Giveaway</button>
@@ -505,39 +530,39 @@ span{
                 <div class="level">CroBoCop Official NFT</div>
                 <h2>$50</h2>
                 <ol>
-                    <li>3D NFT Character</li>
-                    <li>Bonus NFT Included(First 15 Mints)</li>
+                    <li>3D NFT Character Model</li>
+                    <li>Bonus NFT Included(First 15 Mints ONLY)</li>
                     <li>2023 Updated Utility</li>
                 <li>EXCLUSIVE ACCESS</li>
                     <li>Watch-To-Earn Rewards Multiplier</li>
-                    <li>Watch-To-Earn Rewards Multiplier</li>
+                    <li>Ethereum Airdrop ACCESS</li>
                 </ol>
                 <button class="btn">Mint</button>
             </div>
         </section>
         <section id="features">
-            <div class="grid">
-                <div class="icon"><img src="https://i.ibb.co/8sn6vjc/leave.png" alt="leave" border="0"></div>
-                <div class="desc">
-                    <h2>Indivisibility</h2>
-                    <p>NFTs have historically been indivisible when it comes to their utility. For example, a plane ticket cannot be purchased and used partially — someone must buy it in full because only a single person can use the seat. </p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="icon"><img src="https://i.ibb.co/gRbCj9P/fingerprint.png" alt="fingerprint" border="0"></div>
-                <div class="desc">
-                    <h2>Uniqueness</h2>
-                    <p>Our NFTs are also unique because no two NFTs are the same — they're not interchangeable. The metadata of each NFT is an unalterable record that gives it the certificate of authenticity. </p>
-                </div>
-            </div>
-            <div class="grid">
-                <div class="icon"><img src="https://i.ibb.co/GtPqzG4/bar-chart.png" alt="bar-chart" border="0"></div>
-                <div class="desc">
-                    <h2>Interoperability</h2>
-                    <p>NFTs can be traded, purchased, or sold across various DLTs using a decentralized bridge or centralized custodial service. </p>
-                </div>
-            </div>
-        </section>
+          <div class="grid">
+              <div class="icon"><img src="https://img.icons8.com/external-filled-agus-raharjo/1x/external-police-justice-filled-agus-raharjo-2.png" alt="leave" border="0"></div>
+              <div class="desc">
+                  <h2>Indivisibility</h2>
+                  <p>NFTs have historically been indivisible when it comes to their utility. For example, a plane ticket cannot be purchased and used partially — someone must buy it in full because only a single person can use the seat. </p>
+              </div>
+          </div>
+          <div class="grid">
+              <div class="icon"><img src="https://img.icons8.com/external-fill-outline-pongsakorn-tan/1x/external-police-soccer-fill-outline-pongsakorn-tan.png" alt="fingerprint" border="0"></div>
+              <div class="desc">
+                  <h2>Uniqueness</h2>
+                  <p>Our NFTs are also unique because no two NFTs are the same — they're not interchangeable. The metadata of each NFT is an unalterable record that gives it the certificate of authenticity. </p>
+              </div>
+          </div>
+          <div class="grid">
+              <div class="icon"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/1x/external-police-hat-law-and-crime-kiranshastry-lineal-kiranshastry-1.png" alt="bar-chart" border="0"></div>
+              <div class="desc">
+                  <h2>Interoperability</h2>
+                  <p>NFTs can be traded, purchased, or sold across various DLTs using a decentralized bridge or centralized custodial service. </p>
+              </div>
+          </div>
+      </section>
         <footer>
             <ul>
                 <li><a href="#">Privacy</a></li>
@@ -600,7 +625,7 @@ function showSlides(n) {
           <a target="_blank" href="https://www.youtube.com/channel/UCDfH7mI_yGJcgu8_0swH9gg"><i class="fab fa-youtube"></i></a>
           <!--<a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a>-->
         </div>
-        <p>CRO County NFT © 2022 All Rights Reserved.</p>
+        <p>CRO County NFT © 2023 All Rights Reserved.</p>
       </div>
   </footer>
 
