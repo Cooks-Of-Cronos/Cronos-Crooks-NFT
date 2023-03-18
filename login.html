@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>4C's Club Login</title>
+  <style>
+    /* Set up a grid layout with two columns */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100vh;
+      overflow: hidden;
+    }
+
+    /* Set up the left column for the 3D animation */
+    .animation {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .animation canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Set up the right column for the login form */
+    .login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .login h2 {
+      margin-bottom: 20px;
+    }
+
+    .login form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .login input[type="email"],
+    .login input[type="password"] {
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .login input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login input[type="submit"]:hover {
+      background-color: #0a60a0;
+    }
+  </style>
+<script src="https://threejs.org/build/three.min.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/r96/examples/js/libs/inflate.min.js"></script>
+<script src="https://cdn.rawgit.com/mrdoob/three.js/r96/examples/js/loaders/FBXLoader.js"></script>
+
+
+<script src="https://threejs.org/build/three.min.js"></script>
+<script type="module" src="animation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+
+
+
+
+
+
+</head>
+<body>
+   
+  <div class="grid">
+    <div class="animation">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="login">
+      <h2>Login to ACCESS Your Account</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
+
+
+
+<!-- 
+
+o use your own 3D objects made in Blender, you can export them in a format that can be loaded into Three.js, such as .glTF, .OBJ, or .FBX.
+
+Here's an example of how to load a .glTF file in Three.js:
+
+Export your 3D object from Blender as a .glTF file.
+
+Add the Three.js library to your HTML file:
+
+php
+Copy code
+<script src="https://threejs.org/build/three.min.js"></script>
+Add the GLTFLoader library to your HTML file:
+
+php
+Copy code
+<script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+Create a new Three.js scene, camera, and renderer:
+
+javascript
+Copy code
+var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth / 2, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+Load the .glTF file with the GLTFLoader:
+
+javascript
+Copy code
+var loader = new THREE.GLTFLoader();
+loader.load('path/to/your/3d/model.glTF', function(gltf) {
+  scene.add(gltf.scene);
+});
+Note: replace 'path/to/your/3d/model.glTF' with the actual file path to your .glTF file.
+
+Add some lighting to the scene:
+
+csharp
+Copy code
+var light = new THREE.PointLight(0xffffff, 1, 100);
+light.position.set(0, 0, 5);
+scene.add(light);
+Set up an animation loop to update the scene:
+
+scss
+Copy code
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+animate();
+Note: you may also want to add some interaction controls to your 3D object, such as OrbitControls or FlyControls, to allow users to explore the object.
+
+Once you have your 3D object loaded into Three.js, you can position it and add any other visual effects or animations you'd like. -->
